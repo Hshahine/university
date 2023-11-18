@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning Star School</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="toggleMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="info.html">INFO</a></li>
+                <li><a href="payments.html">PAYMENTS</a></li>
+                <li><a href="admission.html">ADMISSION</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+            </div>
+            <i class="fa fa-bars" onclick="toggleMenu()"></i>
+        <div class="text-box">
+           <h1>Morning Star School</h1> 
+           <p>"Unlocking Potential, Embracing Creativity: At our school, curiosity is the key, imagination is the door, and growth is the journey."</p>
+           <a href="#v-m" class="btn" id="scrollBtn">Learn More</a>
+        </div>
+    </section>
+    <!----Vision & Mission ----> 
+    <section class="vision-mission" id="v-m">
+        <h1>Mission & Vision</h1>
+    <p id="mission-p">Welcome to the Mission & Vision section of Morning Star School, where our guiding principles and aspirations are articulated.</p>
+
+    <h2>Mission</h2>
+    <p>At Morning Star School, our unwavering mission is to inspire excellence and foster leadership. We are committed to delivering an unparalleled educational experience that transcends traditional boundaries. Our environment is meticulously designed not only to cultivate academic prowess but also to prioritize personal and leadership growth. By nurturing values of integrity, innovation, and empathy, we empower our students to confront challenges, engage in critical thinking, and contribute meaningfully to our global community.</p>
+
+    <h2>Vision</h2>
+    <p>Our vision at Morning Star School is to equip the upcoming generation with the foundations of leadership through an excellence-driven educational framework. We envision a dynamic learning ecosystem that sparks a perpetual thirst for knowledge, celebrates diversity, and embraces individual talents. Our goal is to create an empowering community where students feel encouraged to explore their potential, armed with the essential skills, knowledge, and ethical values imperative for compassionate leadership, tackling societal issues, and effecting positive transformation worldwide.</p>
+</section>
+    <!----Facilities ----> 
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Explore our diverse spaces for educational excellence.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="img/basketball.jpg" alt="Basketball">
+                <h3>Basketball Court</h3>
+                <p>Discover the thrill of physical fitness and teamwork on our cutting-edge basketball court. Whether it's a friendly match or a serious competition, our facility is designed to foster a spirit of healthy competition and camaraderie, providing students with an energetic space for both recreation and personal growth.</p>
+              
+            </div>
+            <div class="facilities-col">
+                <img src="img/library.jpg" alt="Library">
+                <h3>library</h3>
+                <p>Embark on a journey of knowledge in our expansive library, a haven for intellectual exploration and academic growth. Our collection boasts a diverse array of books and digital resources, creating an enriching environment for students to immerse themselves in learning. The library offers a quiet study space, encouraging focused and undisturbed academic pursuits.</p>
+              
+            </div>
+            <div class="facilities-col">
+                <img src="img/cafeteria.jpg" alt="Cafeteria">
+                <h3>Cafeteria</h3>
+                <p>Fuel both body and mind in our vibrant cafeteria, a social hub that promotes a healthy and balanced lifestyle. Beyond providing nutritious meals, our cafeteria serves as a welcoming space for students to gather, socialize, and recharge. It's not just a place to eat; it's a central part of the school experience, ensuring students are nourished and ready for their educational journey.</p>
+              
+            </div>
+        </div>
+    </section>
+        
+        <!-- Call -->
+        <section class="call">
+            <h1>Get in Touch with Us Today!</h1>
+            <a href="" class="btn">Contact Us</a>
+
+        </section>
+
+
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="copyright">
+                <h5>Copyright 2023 © Morning Star School. All Rights Reserved.</h5>
+            </div>
+
+        </footer>   
+        
+    
+
+    <!----Menu (JavaScript) ---->    
+    <script>
+       const navLinks = document.getElementById("navLinks");
+
+    function toggleMenu() {
+    navLinks.classList.toggle("show-menu");
+}
+document.getElementById('scrollBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    const section = document.querySelector(this.getAttribute('href'));
+    section.scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+ 
+        </script>
+        
+</body>
+</html>

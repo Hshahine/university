@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morning Star School</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="toggleMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="info.html">INFO</a></li>
+            <li><a href="payments.html">PAYMENTS</a></li>
+            <li><a href="admission.html">ADMISSION</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="toggleMenu()"></i>
+      </nav>
+      <h1>Payments</h1>
+    </section>
+
+    <table class="primary-table">
+      <caption>
+        Fees
+      </caption>
+      <tr>
+        <th>Details</th>
+        <th>Amount</th>
+      </tr>
+      <tr>
+        <td>Early Learners (Ages 3-5)</td>
+        <td>$2,500</td>
+      </tr>
+      <tr>
+        <td>Primary Grades (Grades 1-5)</td>
+        <td>$3,200</td>
+      </tr>
+      <tr>
+        <td>Middle School (Grades 6-8)</td>
+        <td>$3,800</td>
+      </tr>
+      <tr>
+        <td>High School (Grades 9-12)</td>
+        <td>$4,500</td>
+      </tr>
+      <tr>
+        <td>Registration Fee</td>
+        <td>$300 (one-time payment upon enrollment)</td>
+      </tr>
+      <tr>
+        <td>Book and Supplies Fee</td>
+        <td>$250 per academic year</td>
+      </tr>
+      <tr>
+        <td>Extracurricular Activities Fee</td>
+        <td>Ranges from $50 to $300 per term based on chosen activities</td>
+      </tr>
+      <tr>
+        <td>Sibling Discount</td>
+        <td>
+          Families with multiple enrolled children receive a 10% discount on
+          tuition for the second and subsequent siblings.
+        </td>
+      </tr>
+    </table>
+
+    <!-- Table 2: Payment Calendar -->
+    <table class="primary-table">
+      <caption>
+        Payment Calendar
+      </caption>
+      <tr>
+        <th>Details</th>
+        <th>Due Date</th>
+      </tr>
+      <tr>
+        <td>Term 1</td>
+        <td>Payment due by August 15</td>
+      </tr>
+      <tr>
+        <td>Term 2</td>
+        <td>Payment due by December 15</td>
+      </tr>
+      <tr>
+        <td>Term 3</td>
+        <td>Payment due by March 15</td>
+      </tr>
+      <tr>
+        <td>Late Payment Policy</td>
+        <td>
+          Late fees of $50 per week will be applied for payments received after
+          the specified due dates to ensure the continued smooth operation of
+          our programs.
+        </td>
+      </tr>
+      <tr>
+        <td>Payment Methods</td>
+        <td>
+          Accepted methods: Credit/debit cards, bank transfers, checks, and our
+          secure online portal. Flexible installment plans available for tuition
+          fees.
+        </td>
+      </tr>
+    </table>
+
+    <!-- Table 3: Outstanding Scholarship Program -->
+    <table class="primary-table">
+      <caption>
+        Outstanding Scholarship Program
+      </caption>
+      <tr>
+        <th>Scholarship Type</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Merit-Based Scholarships</td>
+        <td>
+          "Morning Star Scholars Award": Amounts range from $500 to $1,000 per
+          term based on academic excellence and community involvement.<br />"Bright
+          Futures Grant": Variable awards based on leadership qualities and
+          innovation.
+        </td>
+      </tr>
+      <tr>
+        <td>Need-Based Scholarships</td>
+        <td>
+          "Morning Star Grant": Allocated based on demonstrated financial need.
+        </td>
+      </tr>
+    </table>
+
+    <!-- Table 4: Special Cases Fund Program -->
+    <table class="primary-table">
+      <caption>
+        Special Cases Fund Program
+      </caption>
+      <tr>
+        <th>Support Details</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Financial Support</td>
+        <td>
+          Financial Counseling: Personalized sessions to assist families in
+          understanding scholarships, payment strategies, and financial aid.<br />Community
+          Support: Collaborations with local organizations to establish support
+          programs for families facing financial challenges.
+        </td>
+      </tr>
+    </table>
+    
+        <!-- Footer Section -->
+        <footer>
+          <div class="copyright">
+              <h5>Copyright 2023 © Morning Star School. All Rights Reserved.</h5>
+          </div>
+
+      </footer>  
+      
+    <script>
+      const navLinks = document.getElementById("navLinks");
+
+      function toggleMenu() {
+        navLinks.classList.toggle("show-menu");
+      }
+    </script>
+  </body>
+</html>

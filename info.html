@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morning Star School</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="toggleMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="info.html">INFO</a></li>
+            <li><a href="payments.html">PAYMENTS</a></li>
+            <li><a href="admission.html">ADMISSION</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="toggleMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+    <section class="info">
+    <!-- Curriculum Overview -->
+    <div class="content">
+      <h2>Curriculum Overview</h2>
+      <p>Our curriculum at Morning Star School is designed to provide a comprehensive education that fosters critical thinking, creativity, and holistic development. It includes a diverse range of subjects and teaching methodologies tailored to meet the needs of every student. Programs such as STEM initiatives, Arts & Humanities, and Advanced Placement courses empower students for success.</p>
+    </div>
+  
+    <!-- Announcements -->
+    <div class="content">
+      <h2>Announcements</h2>
+      <p>Welcome to the Announcements section! Stay updated with the latest news, important notices, and school events. Announcements cover changes in schedules, upcoming activities, academic competitions, and extracurricular opportunities for students.</p>
+    </div>
+  
+    <!-- News and Events -->
+    <div class="content">
+      <h2>News and Events</h2>
+      <p>Discover the vibrant life at Morning Star School! From student achievements to school-wide events, this section showcases academic successes, cultural celebrations, sports achievements, and community outreach programs. Stay updated with highlights of recent events and upcoming activities.</p>
+    </div>
+    
+    </section>
+  
+    <!-- Academic Year Calendar -->
+    
+      <table class="primary-table info-table">
+        <caption>Academic Year Calendar</caption>
+        <thead>
+          <tr>
+            <th>Term</th>
+            <th>Event</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Term 1</td>
+            <td>Orientation Day for New Students</td>
+            <td>September 4th, 2023</td>
+          </tr>
+          <tr>
+            <td>Term 1</td>
+            <td>Start of Classes</td>
+            <td>September 5th, 2023</td>
+          </tr>
+          <!-- Add more rows for Term 1 events -->
+  
+          <!-- Example row -->
+          <tr>
+            <td>Term 1</td>
+            <td>Thanksgiving Break</td>
+            <td>November 23rd-24th, 2023</td>
+          </tr>
+  
+          <!-- Term 2 -->
+          <tr>
+            <td>Term 2</td>
+            <!-- Add rows for Term 2 events -->
+          </tr>
+  
+          <!-- Term 3 -->
+          <tr>
+            <td>Term 3</td>
+            <!-- Add rows for Term 3 events -->
+          </tr>
+          
+          <!-- Add more rows for Term 3 events -->
+        </tbody>
+      </table>
+      
+        <!-- Footer Section -->
+        <footer>
+          <div class="copyright">
+              <h5>Copyright 2023 © Morning Star School. All Rights Reserved.</h5>
+          </div>
+
+      </footer>  
+
+
+
+    <!----Menu (JavaScript) ---->
+    <script>
+      const navLinks = document.getElementById("navLinks");
+
+      function toggleMenu() {
+        navLinks.classList.toggle("show-menu");
+      }
+    </script>
+  </body>
+</html>
